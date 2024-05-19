@@ -4,22 +4,61 @@
     box-sizing: 0;
 }
 
-.container {
+body {
     background-color: rgb(175, 216, 218);
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 nav {
-    background-color: #fff;
-    border-radius: 30px;
-    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
 }
 
-nav ul li {
+.header {
+    padding: 15px 15px 15px 20px;
+    font-size: 20px;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+/* .container {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+} */
+
+/* nav {
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    width: 100%;
+} */
+
+/* nav ul {
+    margin-left: 55%;
+} */
+
+header
+
+
+/* nav ul li {
     list-style: none;
     display: inline-block;
     padding: 10px 30px;
@@ -55,9 +94,36 @@ nav ul li:hover::after {
     opacity: 1;
 }
 
-@media screen and (max-width: 600px){
+.container h1{
+    padding: 15px 20px 30px ;
+}
+
+ion-icon {
+    display: none;
+    font-size: 30px;
+    align-items: center;
+}
+
+.sidebar li {
+    display: none
+}
+
+@media screen and (max-width: 700px){
     .container {
+        height: auto;
+        /* flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+    }
+
+    nav {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul {
+        margin-left: 0;
     }
 
     nav ul li {
@@ -66,5 +132,5 @@ nav ul li:hover::after {
         margin: 10px;
     }
     
-}
+} */
 
