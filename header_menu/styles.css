@@ -33,7 +33,7 @@ nav {
 
 .menu ul li {
     display: list-item;
-    padding:  10px 30px;
+    padding:  10px 20px;
     margin: 10px;
 }
 
@@ -59,8 +59,7 @@ nav {
     transform: translate(-50%, -50%);
     z-index: -1;
     opacity: 0;
-    padding: 10;
-
+    /* padding: 10; */
 }
 
 .menu ul li a:hover{
@@ -73,8 +72,25 @@ nav {
     opacity: 2;
 }
 
-@media screen and (max-width: 700px){
-    nav {
+.icon {
+    display: none;
+    padding: 20px;
+    font-size: 30px;
+    width: 100%;
+}
+
+.icon ion-icon{
+    position: relative;
+    left: 80%;
+}
+
+@media screen and (max-width: 600px){
+    .menu{
+        display: none;
+    }
+
+
+    /* nav {
         flex-direction: colume;
     }
 
@@ -85,6 +101,10 @@ nav {
     .menu ul {
         flex-direction: column;
         align-items: flex-end;
+    } */
+
+    .icon{
+        display: block;
     }
 }
 
