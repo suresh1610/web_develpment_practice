@@ -20,58 +20,35 @@ nav {
     font-size: 20px;
 }
 
-.menu ul {
-    list-style: none;
+.menu {
+    flex-grow: 1;
 }
 
 .menu ul {
     display: flex;
     flex-direction: row;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+.menu ul li {
+    display: list-item;
+    padding:  10px 30px;
+    margin: 10px;
 }
 
 .menu ul li a{
     text-decoration: none;
     color: var(--text-color);
     font-size: 18px;
-}
-
-/* .container {
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    flex-direction: row;
-    background-color: #fff;
-} */
-
-/* nav {
-    border-radius: 30px;
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-    width: 100%;
-} */
-
-/* nav ul {
-    margin-left: 55%;
-} */
-
-header
-
-
-/* nav ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 10px 30px;
-    margin: 8px;
-    font-size: 18px;
-    font-weight: 500;
     cursor: pointer;
     position: relative;
     z-index: 2;
     transition: color 0.2s;
 }
 
-nav ul li:after {
+
+.menu ul li a:after{
     content: '';
     width: 100%;
     height: 100%;
@@ -82,55 +59,32 @@ nav ul li:after {
     transform: translate(-50%, -50%);
     z-index: -1;
     opacity: 0;
-    transition: opacity 0.5s;
+    padding: 10;
+
 }
 
-nav ul li:hover{
-    color: #fff
+.menu ul li a:hover{
+    color: #ffffff;
 }
 
-nav ul li:hover::after {
+.menu ul li a:hover::after {
+    padding: 10px;
     top: 50%;
-    opacity: 1;
-}
-
-.container h1{
-    padding: 15px 20px 30px ;
-}
-
-ion-icon {
-    display: none;
-    font-size: 30px;
-    align-items: center;
-}
-
-.sidebar li {
-    display: none
+    opacity: 2;
 }
 
 @media screen and (max-width: 700px){
-    .container {
-        height: auto;
-        /* flex-direction: column;
-        justify-content: center;
-        align-items: center; */
-    }
-
     nav {
+        flex-direction: colume;
+    }
+
+    .menu {
+        flex-grow: 1;
+    }
+
+    .menu ul {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        align-items: flex-end;
     }
-
-    nav ul {
-        margin-left: 0;
-    }
-
-    nav ul li {
-        display: list-item;
-        padding:  10px 30px;
-        margin: 10px;
-    }
-    
-} */
+}
 
